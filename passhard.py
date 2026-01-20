@@ -4,5 +4,16 @@ import time
 print("create a password here")
 time.sleep(1)
 a=input("type your password:")
-x=a
-print("entered password is ",x) # made a working input and output for password checker 1st attempt
+
+passw = "a"
+has_capital = False
+for passw in a:
+         if passw.isupper():
+              has_capital = True
+              break
+if has_capital:
+             print("password is " , a)
+else:
+              print("entered password cant be created") # check whether the password contains capital letter
+
+
